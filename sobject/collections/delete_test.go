@@ -8,11 +8,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/g8rswimmer/go-sfdc/sobject"
+	"github.com/xczas/go-sfdc/sobject"
 
-	"github.com/g8rswimmer/go-sfdc"
+	"github.com/xczas/go-sfdc"
 
-	"github.com/g8rswimmer/go-sfdc/session"
+	"github.com/xczas/go-sfdc/session"
 )
 
 func TestDelete_values(t *testing.T) {

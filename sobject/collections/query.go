@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/g8rswimmer/go-sfdc"
-	"github.com/g8rswimmer/go-sfdc/session"
-	"github.com/g8rswimmer/go-sfdc/sobject"
+	"github.com/xczas/go-sfdc"
+	"github.com/xczas/go-sfdc/session"
+	"github.com/xczas/go-sfdc/sobject"
 )
 
 type collectionQueryPayload struct {

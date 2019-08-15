@@ -20,7 +20,7 @@ func newQueryResponseJSON(jsonMap map[string]interface{}) (queryResponse, error)
 			return queryResponse{}, errors.New("query response: done is not a bool")
 		}
 	} else {
-		return queryResponse{}, errors.New("query response: done is not present")
+		// return queryResponse{}, errors.New("query response: done is not present")
 	}
 	if ts, has := jsonMap["totalSize"]; has {
 		if totalSize, ok := ts.(float64); ok {
@@ -29,7 +29,7 @@ func newQueryResponseJSON(jsonMap map[string]interface{}) (queryResponse, error)
 			return queryResponse{}, errors.New("query response: totalSize is not a number")
 		}
 	} else {
-		return queryResponse{}, errors.New("query response: totalSize is not present")
+		// return queryResponse{}, errors.New("query response: totalSize is not present")
 	}
 	if nru, has := jsonMap["nextRecordsUrl"]; has {
 		if nextRecordsURL, ok := nru.(string); ok {
@@ -53,7 +53,7 @@ func newQueryResponseJSON(jsonMap map[string]interface{}) (queryResponse, error)
 			return queryResponse{}, errors.New("query response: records is not an array")
 		}
 	} else {
-		return queryResponse{}, errors.New("query response: records is not present")
+		// return queryResponse{}, errors.New("query response: records is not present")
 	}
 	return response, nil
 }
